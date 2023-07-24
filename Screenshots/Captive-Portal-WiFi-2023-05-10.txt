@@ -1,0 +1,47 @@
+Captive-Portal-WiFi-2023-05-10.png
+
+One of the many creepy things about having every smart device you own hijacked is 
+that it is sending everything you to who knows where. 
+====
+On macOS, the captiveagent string is unix. The logs mention unix_os and dual boot.
+
+		<dict>
+			<key>command</key>
+			<string>captiveagent</string>
+			<key>net</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>-&gt;0x86f5xxxxxxxxxxxx</string>
+					<key>type</key>
+					<string>unix</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>-&gt;0x86f5xxxxxxxxxxxx</string>
+					<key>type</key>
+					<string>unix</string>
+				</dict>
+			</array>
+		</dict>
+====
+On my iPad, there are a few odd things to note about the CaptivePortal:
+- It's path is not typical for iOS which usually has a /var/ path
+- That it says its architecture is arm64e
+
+My iPads browsers are identified on many web-based platforms as either 'Unknown' or:
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15
+
+As a side-note, this is interesting because I caught softwareupdated on my MacBook Pro M1 2021 (Ventura) downloading and installing packages for:
+product 032-10409 : com.apple.pkg.XProtectPlistConfigData_10_15.16U4241
+product 012-04872 : com.apple.pkg.MRTConfigData_10_15.16U4211
+product 032-59639 : com.apple.pkg.XProtectPayloads_10_15.16U4244
+
+==== // iPad log
+Powerstats for:   com.apple.WebKit.WebContent.CaptivePortal (com.apple.WebKit.WebContent.CaptivePortal) [2357]
+UUID:             XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX74EA
+Path:             /private/preboot/Cryptexes/OS/System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.WebContent.CaptivePortal.xpc/com.apple.WebKit.WebContent.CaptivePortal
+Identifier:       com.apple.WebKit.WebContent.CaptivePortal
+Version:          8615 (8615.2.9.10.4)
+Resource Coalition ID: 611
+Architecture:     arm64e
