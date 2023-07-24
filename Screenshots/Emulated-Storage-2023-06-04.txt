@@ -1,0 +1,29 @@
+Two crash logs showing that the Chromebook indeed has an Android based OS and emulated storage.
+
+Emulated-Storage-2023-06-04.png:
+Recovery File: /storage/emulated/0/OldSchoolEditor/CrashDump/dump_20230604_131616.txt
+Error Message: android.os. Transaction TooLarge Exception: data parcel size 8337144 bytes
+Log:
+android.app.servertransaction.PendingTransactionActions$StopInfo.run(PendingTransactionActions.java:160)
+android.os.Handler.handleCallback(Handler.java:873)
+android.os.Handler.dispatchMessage(Handler.java:99)
+android.os.Looper.loop(Looper.java:193)
+android.app. ActivityThread.main(ActivityThread.java:6975)
+java.lang.reflect.Method.invoke(Native Method)
+com.android.internal.os.RuntimelnitSMethodAndArgsCaller.run(Runtimelnit.java:493)
+com.android.internal.os.Zygotelnit.main(Zygotelnit.java:865)
+
+===
+
+Emulated-Storage-2-2023-06-04.png:
+Recovery File: RECOVERY FILE WRITE FAILED!!
+Error Message: android.os. Transaction TooLarge Exception: data parcel size 8336592 bytes
+Log:
+android.app.servertransaction. Pending TransactionActions$Stopinfo.run(Pending TransactionActions.java:160) 
+android.os.Handler.handleCallback(Handler.java:873) 
+android.os.Handler.dispatchMessage(Handler.java:99) 
+android.os.Looper.loop(Looper.java:193) 
+android.app.ActivityThread.main(Activity Thread.java:6975) 
+java.lang.reflect.Method.invoke(Native Method)
+com.android.internal.os.Runtimelnit$MethodAndArgsCaller.run(Runtimelnit.java:493) 
+com.android.internal.os.Zygotelnit.main(Zygotelnit.java:865)
