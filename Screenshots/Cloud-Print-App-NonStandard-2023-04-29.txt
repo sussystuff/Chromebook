@@ -1,0 +1,6 @@
+Cloud-Print-App-NonStandard-2023-04-29.png
+
+Many geniune ChromeOS apps were modified versions.
+
+Cloud Print
+Replace this app with the factory version? All data will be removed.
